@@ -1,0 +1,20 @@
+
+    button, div, form, input {
+      
+      margin: 10px;
+    
+    }
+
+    img {
+
+    	padding: 5px;
+    }
+
+    #gifs-view {
+
+    	float: left;
+    	display: inline-block;
+    	width: 100%;
+    }
+
+    
