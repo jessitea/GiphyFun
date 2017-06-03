@@ -59,7 +59,7 @@
           $('#gifs-view').append('<p><b>Rating:</b> ' + rating + '</p>');
           $('#gifs-view').append('<img src="' + stillUrl + '" height="150" class="gif" data-state="still" data-still="' + stillUrl + '" data-animate="' + movingUrl + '">');
 
-          
+
         
         }
           
@@ -67,7 +67,7 @@
 
 
        // Function to animate gifs
-      $(".gif").on("click", function() {
+      $("#gifs-view").on("click", "img", function() {
 
       var state = $(this).attr('data-state');
       var animateUrl = $(this).attr('data-animate');
