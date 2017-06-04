@@ -19,15 +19,20 @@
     <div class="container">
       
 
-      <!-- Rendered buttons will appear here  -->
-      <div id="buttons-view"></div><form id="topic-form"><label for="topic-input">Add a Topic</label><input type="text" id="topic-input"><br>
+     
+      <div id="search-container">
+      <form id="topic-form"><label for="topic-input">Add a Topic</label><input type="text" id="topic-input"><br>
 
         <!-- Button triggers new movie to be added -->
         <input id="add-topic" type="submit" value="Add Any Topic">
       </form>
+      </div>
 
       <!-- Topic gifs appear here -->
-      <div id="gifs-view"></div>
+      <div id="gifs-view-outer"><div id="gifs-view"></div></div>
+
+       <!-- Rendered buttons will appear here  -->
+      <div id="buttons-view-outer"><div id="buttons-view"></div></div>
 
       
     </div>

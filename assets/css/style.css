@@ -1,20 +1,70 @@
 
-    button, div, form, input {
+    button, form, input {
       
       margin: 10px;
     
     }
+	
+	#buttons-view-outer {
 
-    img {
+		width: 80%;
+		overflow: scroll;
+		height: 10%;
+		margin: 0 auto;
+	}
 
-    	padding: 5px;
+	#buttons-view {
+
+		white-space: nowrap;
+
+	}
+
+	
+
+    .generated-gif {
+
+    	padding: 0px 8px 8px 8px;
+    	width: 150px;
+    	/*float: left;*/
+    	/*display: inline;*/
+    	
+    }
+
+    #gifs-view-outer {
+
+    	width: 100%;
+    	height: 400px;
+    	overflow: scroll;
+    	background-color: red;
     }
 
     #gifs-view {
 
     	float: left;
-    	display: inline-block;
+    	/*display: inline-block;*/
     	width: 100%;
+    	overflow: scroll;
     }
 
+    .rating {
+
+    	padding: 8px 8px 0px 8px;
+    	/*float: left;*/
+    	width: 150px;
+    	
+    }
+
+    .gif {
+
+    	width: 150px;
+    }
+
+    .gif-box {
+
+    	display: inline-block;
+    }
+
+
     
+
+
