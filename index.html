@@ -3,46 +3,94 @@
 
 <head>
     <meta charset="utf-8">
-    <title>GIPHY API</title>
+    <title>GIPHY Party</title>
 
     <!-- Link to CSS stylesheets -->
-    <!-- <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 
+    <!-- Link to Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
+    <!-- Link to Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+
+    <!-- Link to stylesheet -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-  
+
+
+
 </head>
 
 <body>
 
+    <header>
+        <h1>GIPHY<span id="p">P</span><span id="a">a</span><span id="r">r</span><span id="t">t</span><span id="y">y</span></h1>
+    </header>
+
     <div class="container">
-      
 
-     
-      <div id="search-container">
-      <form id="topic-form"><label for="topic-input">Add a Topic</label><input type="text" id="topic-input"><br>
+        <div class="row">
 
-        <!-- Button triggers new movie to be added -->
-        <input id="add-topic" type="submit" value="Add Any Topic">
-      </form>
-      </div>
+            <div class="col-md-12">
 
-      <!-- Topic gifs appear here -->
-      <div id="gifs-view-outer"><div id="gifs-view"></div></div>
+                <div id="button-container">
 
-       <!-- Rendered buttons will appear here  -->
-      <div id="buttons-view-outer"><div id="buttons-view"></div></div>
+                    <!-- Image/Button of left scrolling arrow  -->
+                    <button id="leftArrow"><img src="assets/images/arrow-left-128.png" height="40" alt="left-arrow" class="arrow"></button>
+                    <div id="buttons-view-outer">
+                        
+                        <!-- Rendered buttons will appear here  -->
+                        <div id="buttons-view"></div>
 
-      
+                    </div>
+
+                    <!-- Image/Button of left scrolling arrow  -->
+                    <button id="rightArrow"><img src="assets/images/arrow-right-128.png" height="40" alt="left-arrow" class="arrow"></button>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- Extra row for space -->
+        <div class="row"></div>
+        <div class="row"></div>
+
+         <!-- Topic gifs appear here -->
+        <div class="col-md-9">
+            <div class="panel panel-default" id="gifs-view-outer">
+                <div id="gifs-view"></div>
+            </div>
+
+        </div>
+
+        <!-- Input form to add topics here -->
+        <div class="col-md-3">
+            <div class="panel panel-default">
+                <div class="panel-heading">Get Your Own Gifs</div>
+                <div class="panel-body" id="searchpanel">
+
+                    <form id="topic-form"><input type="text" id="topic-input">
+
+                        <!-- Button triggers new gif to be added -->
+                        <p><input id="add-topic" type="submit" value="Boom."></p>
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
     </div>
 
 </body>
 
-   <!-- Link to JQuery -->
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<!-- Link to JQuery -->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 
-  <!-- Link to Javascript file -->
-  <script src="assets/javascript/giphy.js"></script>
+<!-- Link to Javascript file -->
+<script src="assets/javascript/giphy.js"></script>
 
 </html>
