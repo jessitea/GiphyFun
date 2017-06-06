@@ -87,9 +87,6 @@
 
           })
 
-
-
-
       }
 
 
@@ -160,6 +157,7 @@
               scrollLeft: "-=200px"
           }, "slow");
       });
+
 
       //Calls displayGifs function on click of any class of '.topicgif'
       $(document).on("click", ".topicgif", displayGifs);
