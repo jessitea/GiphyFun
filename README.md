@@ -1,5 +1,7 @@
 # Giphy Party
 
+https://jessitea.github.io/GiphyFun/
+
 Have fun searching the GIPHY database with GIPHY Party!  
 
 Pre-populated searches are shown on the top of the screen.  
